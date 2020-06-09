@@ -2,6 +2,6 @@
     "sketch": "LoRaKarta.ino",
     "output": "build/",
     "board": "BSFrance-avr-master:avr:lora32u4",
-    "port": "COM10",
+    "port": "/dev/cu.usbmodem14201",
     "programmer": "AVRISP mkII"
 }

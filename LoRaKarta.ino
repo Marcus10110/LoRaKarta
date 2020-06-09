@@ -14,22 +14,25 @@ void Assert( const String& message );
 
 void setup()
 {
-    Serial.begin( 9600 );  // initialize serial
+    Serial.begin( 9600 ); // initialize serial
+    while( !Serial )
+        ;
     Serial1.begin( 9600 ); // GPS serial
+    Serial.println( "Loading..." );
 
     if( !Radio::StartRadio( OnReceive ) )
     {
         Assert( "Radio failed to initialize" );
     }
-    if( !Lcd::StartLcd() )
+    /*if( !Lcd::StartLcd() )
     {
         Assert( "Lcd failed to initialize" );
-    }
+    }*/
 
-    if( !Eink::StartEInk() )
+    /*if( !Eink::StartEInk() )
     {
         Assert( "e-Ink failed to initialize" );
-    }
+    }*/
 
     Serial.println( "LoRa init succeeded." );
 }
@@ -40,8 +43,6 @@ void loop()
     {
         GPS::Update();
     }
-
-    Input::Scan();
 
     if( millis() - lastSendTime > interval )
     {

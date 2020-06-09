@@ -20,6 +20,11 @@ namespace Input
 
     void Scan()
     {
-        //
+        char key = keypad.getKey();
+
+        if( key != NO_KEY )
+        {
+            Serial.println( key );
+        }
     }
 }
