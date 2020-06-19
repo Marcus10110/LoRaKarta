@@ -12,6 +12,7 @@
 
 #include "oled.h"
 #include "keypad.h"
+#include "eink.h"
 
 
 TinyGPS gps;
@@ -40,6 +41,8 @@ void setup()
     // OledSetup();
     KeypadSetup();
     // RadioSetup( OnPacket );
+    EinkSetup();
+    DrawMap();
 }
 
 
