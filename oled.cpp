@@ -1,5 +1,8 @@
 #include "oled.h"
 
+#include <Wire.h>
+#include "SSD1306Ascii.h"
+#include "SSD1306AsciiWire.h"
 
 SSD1306AsciiWire oled;
 #define I2C_ADDRESS 0x3C

@@ -12,7 +12,6 @@
 
 RH_RF95 rf95( RFM95_CS, RFM95_INT );
 
-typedef void ( *RxHandler )( uint8_t* buffer, uint8_t length );
 
 RxHandler radio_callback = nullptr;
 

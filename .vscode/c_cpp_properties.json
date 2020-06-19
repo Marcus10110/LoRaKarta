@@ -3,7 +3,8 @@
         {
             "name": "Win32",
             "includePath": [
-                "C:\\Users\\Mark\\AppData\\Local\\Arduino15\\packages\\adafruit\\hardware\\samd\\1.5.14\\**"
+                "C:\\Users\\Mark\\AppData\\Local\\Arduino15\\packages\\adafruit\\hardware\\samd\\1.5.14\\**",
+                "C:\\Users\\Mark\\Documents\\Arduino\\libraries\\**"
             ],
             "forcedInclude": [
                 "C:\\Users\\Mark\\AppData\\Local\\Arduino15\\packages\\adafruit\\hardware\\samd\\1.5.14\\cores\\arduino\\Arduino.h"

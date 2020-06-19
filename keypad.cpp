@@ -14,9 +14,9 @@
 const byte ROWS = 4;
 const byte COLS = 3;
 
-const char KEYS[ ROWS ][ COLS ] = { { '1', '2', '3' }, { '4', '5', '6' }, { '7', '8', '9' }, { '*', '0', '#' } };
-const byte ROW_PINS[ ROWS ] = { R1, R2, R3, R4 };
-const byte COL_PINS[ COLS ] = { C1, C2, C3 };
+char KEYS[ ROWS ][ COLS ] = { { '1', '2', '3' }, { '4', '5', '6' }, { '7', '8', '9' }, { '*', '0', '#' } };
+byte ROW_PINS[ ROWS ] = { R1, R2, R3, R4 };
+byte COL_PINS[ COLS ] = { C1, C2, C3 };
 
 uint32_t gLastKeyPressMs = 0;
 char gLastKey = '\0';
