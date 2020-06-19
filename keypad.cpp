@@ -3,10 +3,10 @@
 #include "keypad.h"
 
 
-#define R1 A0
-#define R2 A1
-#define R3 A2
-#define R4 10
+#define R1 10
+#define R2 9
+#define R3 6
+#define R4 5
 #define C1 13
 #define C2 12
 #define C3 11

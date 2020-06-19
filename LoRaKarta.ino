@@ -34,14 +34,11 @@ void setup()
             break;
     }
 
-
+    Serial.begin( 9600 );
     Serial1.begin( 9600 );
-    delay( 100 );
-    Serial1.print( "setup here" );
-    // Serial.print( "setup" );
 
     // OledSetup();
-    // KeypadSetup();
+    KeypadSetup();
     // RadioSetup( OnPacket );
 }
 
@@ -52,7 +49,7 @@ void loop()
     if( letter != '\0' )
     {
         // handle keypress.
-        // Serial1.println( letter );
+        Serial1.println( letter );
     }
 
 
