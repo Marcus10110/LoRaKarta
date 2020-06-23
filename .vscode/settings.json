@@ -1,7 +1,8 @@
 {
     "editor.formatOnSave": true,
     "files.associations": {
-        "*.rh": "cpp"
+        "*.rh": "cpp",
+        "ostream": "cpp"
     },
     "arduino.enableUSBDetection": false
 }

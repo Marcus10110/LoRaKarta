@@ -38,11 +38,11 @@ void setup()
     Serial.begin( 9600 );
     Serial1.begin( 9600 );
 
-    // OledSetup();
+    OledSetup();
     KeypadSetup();
     // RadioSetup( OnPacket );
     EinkSetup();
-    DrawMap();
+    // DrawMap();
 }
 
 

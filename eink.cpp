@@ -8,8 +8,10 @@
 #define EPD_RESET -1 // can set to -1 and share with microcontroller Reset!
 #define EPD_BUSY -1  // can set to -1 to not use a pin (will wait a fixed delay)
 
-Adafruit_IL0373 display( 152, 152, EPD_DC, EPD_RESET, EPD_CS, SRAM_CS, EPD_BUSY );
-
+namespace
+{
+    Adafruit_IL0373 display( 152, 152, EPD_DC, EPD_RESET, EPD_CS, SRAM_CS, EPD_BUSY );
+}
 #define COLOR1 EPD_BLACK
 #define COLOR2 EPD_RED
 
